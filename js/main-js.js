@@ -1,61 +1,68 @@
-function Worker(firstName,lastName,age,) {
-  this.firstName = name;
-  this.lastName = lastName;  
-  this.age = age;
-  this.position = position;
-  this.sex = sex;
-  this.experience = experience;
-  this.getName = function(){
-    return this.name;
+class Worker {
+  
+  constructor(firstName,lastName,age){
+    this.firstName = name;
+    this.lastName = lastName;  
+    this.age = age;
+    this.position = position;
+    this.sex = sex;
+    this.experience = experience;
   }
-  this.getLastName = function(){
-    return this.lastName;
-  }
-  this.setAge = function (age) {
+  getName = () =>
+    this.name;
+  
+  getLastName = () => 
+    this.lastName;
+  
+  setAge = (age) => {
     if (age <= 0 || age >= 100)
     throw "Значение должно быть больше 0 и меньше 100";
     this.age = age;
   }
-  this.setPosition = function(position){
+  setPosition = (position) =>
     this.position = position;
-  }
 }
 
-function IndastrialWorker(){
-  Worker.call(this);
-  this.rank = rank;
-  this.personalNumber = personalNumber;
-  this.getRank = function(){
-    return this.rank;
+class IndastrialWorker extends Worker{
+  constructor(firstName,lastName,age){
+    this.rank = rank;
+    this.personalNumber = personalNumber;
+    super(firstName,lastName,age);
+
   }
-  this.getPersonalNumber = function(){
-    return this.personalNumber;
-  }
-  this.setRank = function(rank){
+  getRank = () =>
+    this.rank;
+  
+  getPersonalNumber = () => 
+    this.personalNumber;
+  
+  setRank = (rank) => {
     if (rank >0 || rank <=7)
     throw "Значение должно быть больше 0 и меньше 7";
     this.rank = rank;
   }
 }
-function TransportWorker(){
-  Worker.call(this);
-  this.transport = transport;
-  this.numberOfTransport = numberOfTransport;
-  this.getTransport = function(){
-    return this.transport;
+class TransportWorker extends Worker{
+  constructor(firstName,lastName,age){
+    this.transport = transport;
+    this.numberOfTransport = numberOfTransport;
+    super(firstName,lastName,age);
   }
-  this.getNumberOfTransport = function(){
-    return this.numberOfTransport;
-  }
-  this.setTransport = function(transport){
+
+  getTransport = () =>
+    this.transport;
+  
+  getNumberOfTransport = () =>
+    this.numberOfTransport;
+  
+  setTransport = (transport) => {
     if(transport=='автомобиль' || transport=='автобус' || transport=='тралейбус' || transport=='трамвай' || transport=='грузовик')
     throw "Неверный транспорт";
     this.transport = transport;
   }
-  
 }
-workType.onChange = function(a) {
-  alert("work");
+
+function Selected(a) {
   var label = a.value;
   if (label==1) {
       document.getElementById("blockForHidden1").style.display='none';

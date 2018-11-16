@@ -4,6 +4,7 @@ body{
     background-image: url('../images/background-img.jpg');
     background-repeat: no-repeat; 
     background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #constructor{
     width: 100%;
@@ -21,7 +22,7 @@ body{
     padding:20px;
     border-radius: 8px;
     border: 2px solid #ccc;
-    font-size:13px;
+    font-size:15px;
 }
 #form>h1{
     display: flex;
@@ -41,9 +42,7 @@ body{
     width:100px;
 }
 
-#age, #experience{
-    width:25px
-}
+
 
 #create{
     background-color: #03a6ec;
@@ -52,4 +51,18 @@ body{
 
 #clear{
     background-color: #ccc;
+}
+#form>div input,#form>div select{
+    border-radius: 3px;
+    height:25px;
+    width:200px;
+    padding-left:15px;
+}
+#form>div select{
+    padding-left:10px;
+    color: #a7a6a6;
+
+}
+#form>div .form-check-input{
+    width:45px;
 }

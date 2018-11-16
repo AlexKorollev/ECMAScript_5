@@ -17,6 +17,7 @@
             <div> 
                 <span >Тип записи</span>
                 <select name="workType" id="workType" aria-required="true" onchange="Selected(this)">
+                    
                     <option value="1">Выбирите тип записи</option>
                     <option value="2">Работник индустриальной компании</option>
                     <option value="3">Работник транспортной компании</option>
@@ -37,10 +38,10 @@
                 <span>
                     <label for="age">Возвраст</label>
                 </span>
-                <input type="text" name="age" id="age" min="1" max="100" ></div>
+                <input type="text" name="age" id="age" min="1" max="100" placeholder="Введите свой возраст"></div>
             <div>
                 <span>Должность</span>
-                <select name="position" id="position">
+                <select name="position" id="position" >
                     <option value=""></option>
                     <option value=""></option>
                     <option value=""></option>
@@ -50,13 +51,22 @@
                 <span>
                     <label for="experience">Стаж</label>
                 </span>
-                <input type="text" name="experience" id="experience">
+                <input type="text" name="experience" id="experience" placeholder="Введите свой стаж">
             </div>
             <div>
                  <span>
                     <label for="sex">Пол</label>
                 </span>
-                 <input type="text" name="sex" id="sex">
+                <span class="form-check form-check-inline">
+                    <label class="form-check-label" for="inlineCheckbox1">М</label>
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    
+                </span>
+                  <span class="form-check form-check-inline">
+                    <label class="form-check-label" for="inlineCheckbox2">Ж</label>
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    
+                  </span>
             </div>
             <!-- снизу скрытый блок -->
             <div id="blockForHidden1" style="display:none;">

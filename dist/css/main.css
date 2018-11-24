@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#mainTable{
+    width: 100%;
+    border: 1px solid darkgray;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#mainTable th{
+    border-right: 1px solid darkgray;
+    padding: 5px;
+}
+#create{
+    background-color: #03a6ec;
+    border-radius: 5px;
+    color: #fff;
+    margin: 30px 0;
+    border: none;
+    
+}
